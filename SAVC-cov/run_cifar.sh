@@ -1,0 +1,32 @@
+python train.py \
+-dataroot 'PUT YOUR DATA HERE'\
+-project savc \
+-dataset cifar100 \
+-base_mode 'ft_cos' \
+-new_mode 'avg_cos' \
+-lr_base 0.1 \
+-lr_new 0.0001 \
+-decay 0.0005 \
+-epochs_base 600 \
+-schedule Cosine \
+-gpu 7 \
+-temperature 16 \
+-moco_dim 32 \
+-moco_k 8192 \
+-mlp \
+-moco_t 0.07 \
+-moco_m 0.995 \
+-size_crops 32 18 \
+-min_scale_crops 0.9 0.2 \
+-max_scale_crops 1.0 0.7 \
+-num_crops 2 4 \
+-alpha 0.2 \
+-beta 0.8 \
+-constrained_cropping \
+-fantasy rotation2 \
+-cov_balance 0.01 \
+-a 1.0 \
+-cov_restriction \
+-epochs_new 10 \
+-incft \
+-incremental_cov_balance 0.01>>cifar_savc.txt
