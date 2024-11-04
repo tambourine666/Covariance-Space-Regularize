@@ -11,3 +11,8 @@
 3. sklearn
 4. numpy
 
+# Acknowledgements:
+We thank the following repos for providing helpful components/functions in our work.
+1. [FACT](https://github.com/zhoudw-zdw/CVPR22-Fact)
+2. [SAVC](https://github.com/zysong0113/SAVC)
+
